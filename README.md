@@ -49,7 +49,7 @@ If this model is used, and used appropriately, it can be a benefit to any compan
 Food spoilage is a major concern for any grocery chain, and if there was a way to even have a guess as to what sales might look like in the future, it can save that company many hard earned dollars and save that many more future headaches. 
 
 ## Limitations & Next Steps
-This model is not perfect, but it will get you in the right diretion, and with more data coming in everyday, as new methods & new algorithms are created I will add to this model. 
+This model is not perfect, but it will get you in the right direction, and with more data coming in everyday, as new methods & new algorithms are created I will add to this model. 
 
 Updating my skill, prowess, and overall ingenuity.
 
