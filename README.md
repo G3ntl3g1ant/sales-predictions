@@ -2,7 +2,7 @@
 ## Analysis of Outlet Stores and Making Future Sales Predictions 
 #### Author: Kai Dawson-Fischer
 ### Can Outlet Store Sales be predicted?
-Can sales for an Outlet brand be predicted through analyzation of Outlet size, item visibitlity, etc?
+Can sales for an Outlet brand be predicted through analyzation of Outlet size, item visibility, etc?
 ## Data
 Data Source:
 
