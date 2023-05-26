@@ -28,6 +28,39 @@ Here we can see in the scatter plot above that the majority of sales are coming 
 
 Here we see the correlation between Outlet_Sales Vs Item_Visibility, organized by Item_Type. Surprising enough, even with less than 19% visibility, the top 3 most sold Item_Types are 'Household', 'Fruits and Vegetables', and 'Baking Goods'.
 
+![Linear Regression Plot](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/linreg_plot.png)
+
+**Top 3 Most Impactful Features:**
+
+**Outlet_Type** - Depending upon the location, positively influences the sales price of items.
+
+**Outlet_Size** - The size of the outlet positively influences the sales price.
+
+**Item_Type_Seafood** - The product category of Seafood also positively influences the sales price.
+
+![Random Forest Plot](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/rfr_plot.png)
+
+**Top 5 Most Important Features:**
+- **Item_MRP**
+- **Outlet_Type**
+- **Item_Visibility**
+- **Item_Weight**
+- **Outlet_Size**
+
+![SHAP Bar Plot](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/shap_barplot.png)
+
+When it comes to the 2 bar plots, both SHAP and the Original Feature Importances have the same top 5 chosen importances.
+
+![SHAP Dot Plot](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/shap_dotplot.png)
+
+**Top 3 Most Important Features:**
+
+**Item_MRP** - The Item Maximum Retail price positively influences the prediction of sales.
+
+**Outlet_Type** - Outlet Type positively influences the sales prediction.
+
+**Item_Visibility** - Item Visibility slightly negatively influenced the prediction of sales.
+
 ## Model
 The final model that was chosen to be used was the RandomForestRegressor Model.
 
