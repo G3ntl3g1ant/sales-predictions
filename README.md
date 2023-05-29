@@ -28,8 +28,6 @@ Here we can see in the scatter plot above that the majority of sales are coming 
 
 Here we see the correlation between Outlet_Sales Vs Item_Visibility, organized by Item_Type. Surprising enough, even with less than 19% visibility, the top 3 most sold Item_Types are 'Household', 'Fruits and Vegetables', and 'Baking Goods'.
 
-![Linear Regression Plot](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/linreg_plot.png)
-
 **Top 3 Most Impactful Features:**
 
 **Outlet_Type** - Depending upon the location, positively influences the sales price of items.
@@ -60,6 +58,65 @@ When it comes to the 2 bar plots, both SHAP and the Original Feature Importances
 **Outlet_Type** - Outlet Type positively influences the sales prediction.
 
 **Item_Visibility** - Item Visibility slightly negatively influenced the prediction of sales.
+
+### Global SHAP Findings:
+
+![Linear Regression Plot](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/linreg_plot.png)
+
+### Local SHAP/LIME Findings:
+**Group A:**
+- High Item_MRP
+- Smaller Outlet_Type
+- Low Item_Visibility
+- Low Item Weight
+- Smaller Outlet_Size
+
+![Group A Force Plot](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/GroupAForcePlot.png)
+
+As we can see in the force plot for group A:
+
+- While there were many factors decreasing the higher sales prediction, Item_MRP was a strong factor pushing towards a higher prediction.
+ - Decreasing factors were:
+ - Item_Visibility
+ - Item_Weight
+ - Outlet_Size
+
+![Group A LIME Tabular](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/GroupALIMEPlot.jpg)
+
+As we can see in the LIME explanation above for Group A, there were many factors pushing for a higher sales prediction, such as:
+
+- Item_MRP
+- Item_Type_Hard Drinks
+
+With Item_MRP being a major factor in predicting a higher sales prediction.
+
+**Group B:**
+- Low Item_MRP
+- Smaller Outlet_Type
+- Low Item_Visibility
+- Low Item Weight
+- Smaller Outlet_Size
+
+![Group B Force Plot](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/GroupBForcePlot.png)
+
+As we can see in the force plot for group B:
+
+In comparison to Group A, Item_MRP is still a large influence on pushing the sales prediction higher, but we can see that there is slightly more influence now from Item_Visibility and Outlet_Type pushing towards the higher sales prediction When Item_MRP is lower.
+
+- Decreasing factors for Group B were:
+ - Item_Weight
+ - Item_Type_Dairy
+ - Outlet_Size
+
+![Group B LIME Tabular](https://github.com/G3ntl3g1ant/sales-predictions/blob/main/GroupBLIMEPlot.jpg)
+
+As we can see in the LIME explanation above for Group B, in comparison to Group A there is more balance in factors pushing for a higher sales prediction.
+
+Some of these factors were:
+- Item_MRP
+- Item_Visibility
+
+Item_MRP is still a major factor in the sales prediction, but with Group B representing lower MRP, we can see more influence from the actual Item Type and Item Visibility.
 
 ## Model
 The final model that was chosen to be used was the RandomForestRegressor Model.
